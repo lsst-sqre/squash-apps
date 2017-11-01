@@ -1,0 +1,6 @@
+jupyter
+holoviews==1.8.4
+bokeh==0.12.10
+pandas==0.21.0
+requests==2.18.4
+matplotlib==2.1.0
