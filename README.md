@@ -1,9 +1,30 @@
 # squash-apps
 A place to develop new visualizations or dashboards that you would like to deploy to SQuaSH
-```
-pip install --user -r requirements.txt
-```
+
+
+1. Clone this repo
 
 ```
-jupyter notebook notebooks/holoviews.ipynb
+git clone https://github.com/lsst-sqre/squash-apps.git
 ```
+
+2. Create a virtualenv
+
+```
+cd squash-apps
+
+virtualenv squash-apps -p python3
+source squash-apps/bin/activate
+pip install -r requirements.txt
+```
+
+3. Using the virtualenv in the Jupyter notebook
+
+
+```
+python -m ipykernel install --user --name=squash-apps
+jupyter notebook
+```
+
+You should now be able to see your kernel in the Jupyter notebook menu: `Kernel -> Change kernel` and be able so switch to it. 
+
