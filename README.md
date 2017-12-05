@@ -26,9 +26,11 @@ python -m ipykernel install --user --name=squash-apps
 jupyter notebook
 ```
 
-(You should now be able to see your kernel in the Jupyter notebook menu: `Kernel -> Change kernel` and be able so switch to it.)
+(You should now see your kernel in the Jupyter notebook menu: `Kernel -> Change kernel` and be able so switch to it.)
 
-Check the content of the `notebooks` folder where the visualizations are created and then the `apps` folder for an standalone version that can be deployed with `bokeh serve`, for example
+Check the content of the `notebooks` folder where the visualizations are created. 
+
+The `apps` folder contains standalone versions that can be deployed with `bokeh serve`
 
 ```
 source squash-apps/bin/activate
